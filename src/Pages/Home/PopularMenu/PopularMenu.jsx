@@ -15,12 +15,12 @@ const PopularMenu = () => {
             })
     }, [])
     return (
-        <section className="mb-12">
+        <section className="mb-12 mx-8 ">
             <SectionTitle
                 heading="From Our Menu"
                 subHeading="Popular Items"
             ></SectionTitle>
-            <div className="grid md:grid-cols-2 gap-10">
+            <div className="grid md:grid-cols-2 gap-10 ">
                 {
                     menu.map(item => <MenuItem
                         key={item._id}
@@ -28,7 +28,9 @@ const PopularMenu = () => {
                     ></MenuItem>)
                 }
             </div>
-            <button className="btn btn-outline border-0 border-b-4 mt-4 ">View Full Menu</button>
+           <div className="flex items-center justify-center my-3">
+           <button className="btn btn-outline border-0 border-b-4 mt-4 w-4/12 md:w-2/12 ">View Full Menu</button>
+           </div>
         </section>
     );
 };
