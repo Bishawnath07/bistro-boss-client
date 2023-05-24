@@ -5,9 +5,9 @@ import soupImg from '../../../assets/menu/soup-bg.jpg'
 import saladImg from '../../../assets/menu/salad-bg.jpg'
 import pizzaImg from '../../../assets/menu/pizza-bg.jpg'
 import dessertImg from '../../../assets/menu/dessert-bg.jpeg'
-import useMenu from "../../../Hooks/useMenu";
 import SectionTitle from "../../../components/SectionTitle/SectionTitle";
 import MenuCategory from "../MenuCategory/MenuCategory";
+import useMenu from "../../../hooks/useMenu";
 
 const Menu = () => {
     const [menu] = useMenu();
