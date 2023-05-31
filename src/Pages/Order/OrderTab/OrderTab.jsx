@@ -4,6 +4,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import FoodCard from "../../../components/FoodCard/FoodCard";
 
+// Implement pagination here on this page
 const OrderTab = ({ items }) => {
     const pagination = {
         clickable: true,
