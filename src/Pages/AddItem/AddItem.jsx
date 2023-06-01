@@ -3,7 +3,7 @@ import Swal from "sweetalert2";
 import useAxiosSecure from '../../Hooks/useAxiosSecure';
 import SectionTitle from '../../components/SectionTitle/SectionTitle';
 
-const img_hosting_token = import.meta.env.VITE_Image_Upload_token;
+const img_hosting_token = import.meta.env.VITE_IMGBB_TOKEN;
 
 const AddItem = () => {
     const [axiosSecure] = useAxiosSecure();
@@ -32,7 +32,7 @@ const AddItem = () => {
                     if(data.data.insertedId){
                         reset();
                         Swal.fire({
-                            position: 'top-end',
+                            position: 'top-center',
                             icon: 'success',
                             title: 'Item added successfully',
                             showConfirmButton: false,
@@ -84,7 +84,7 @@ const AddItem = () => {
                     <label className="label">
                         <span className="label-text">Recipe Details</span>
                     </label>
-                    <textarea {...register("recipe", { required: true })} className="textarea textarea-bordered h-24" placeholder="Bio"></textarea>
+                    <textarea {...register("recipe", { required: true })} className="textarea textarea-bordered h-24" placeholder="Details"></textarea>
                 </div>
                 <div className="form-control w-full my-4">
                     <label className="label">

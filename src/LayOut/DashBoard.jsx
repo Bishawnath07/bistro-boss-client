@@ -10,9 +10,9 @@ const DashBoard = () => {
     return (
         <div className="drawer drawer-mobile ">
             <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
-            <div className="drawer-content flex flex-col items-center justify-center">
-                <Outlet></Outlet>
+            <div className="drawer-content ">
                 <label htmlFor="my-drawer-2" className="btn btn-primary drawer-button lg:hidden">Open drawer</label>
+                <Outlet></Outlet>
 
             </div>
             <div className="drawer-side bg-[#D1A054]">
@@ -23,7 +23,7 @@ const DashBoard = () => {
                             <>
                                 <li><NavLink to="/dashboard/home"><FaHome></FaHome> Admin Home</NavLink></li>
                                 <li><NavLink to="/dashboard/additem"><FaUtensils></FaUtensils> Add Item</NavLink></li>
-                                <li><NavLink to="/dashboard/history"><FaWallet></FaWallet> Manage Item</NavLink></li>
+                                <li><NavLink to="/dashboard/manageitem"><FaWallet></FaWallet> Manage Item</NavLink></li>
                                 <li><NavLink to="/dashboard/history"><FaBook></FaBook> Manage Booking</NavLink></li>
                                 <li><NavLink to="/dashboard/allusers"><FaUsers></FaUsers> All Users</NavLink></li>
 
