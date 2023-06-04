@@ -113,8 +113,9 @@ const CheckoutForm = ({ cart, price }) => {
 
     return (
         <>
-            <form className="w-2/3 m-8" onSubmit={handleSubmit}>
-                <CardElement
+            <form className="w-2/3 m-8 " onSubmit={handleSubmit}>
+                <CardElement 
+                className="border-gray-200 border-2 p-3 rounded-lg"
                     options={{
                         style: {
                             base: {
